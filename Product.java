@@ -10,12 +10,12 @@ public class Product{
    }
    
    //Methods, getName, Price and reduce
-   public void getName(){
-      System.out.println("The product name is: " + name);
+   public String getName(){
+      return name;
    }
    
-   public void getPrice(){
-      System.out.println("The price is " + price);
+   public double getPrice(){
+      return price;
    }
    
    public void Reduce(double perOff){
