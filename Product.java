@@ -1,12 +1,20 @@
+/*
+* This program is created by Akhil Devarapalli
+* I have neither given or recived unathourized help of this assignment - Akhil Devarapalli
+*
+*/
+
+
+
 public class Product{
    //Instance variables
    private String name;
-   private double price;
+   private double cost;
    
    //Constructor class
-   public Product(String name, double price){
+   public Product(String name, double cost){
       this.name = name;
-      this.price = price;
+      this.cost = cost;
    }
    
    //Methods, getName, Price and reduce
@@ -15,12 +23,20 @@ public class Product{
    }
    
    public double getPrice(){
-      return price;
+      return cost;
    }
    
    public void Reduce(double perOff){
       perOff = (100.0 - perOff) / 100.0;
-      price = price * perOff;
+      cost = cost * perOff;
       
+   }
+   
+   public void setItemName (String nm) {
+      this.name = nm;
+   }
+   
+   public void setCost (double updatedCost) {
+      this.cost = updatedCost;
    }
 }
